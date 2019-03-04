@@ -23,15 +23,15 @@ public class ProductInfoRepositoryTest {
     @Test
     public void save() {
         ProductInfo productInfo = new ProductInfo();
-        productInfo.setProductId("123");
+        productInfo.setProductId("12");
 
-        productInfo.setProductName("面包");
-        productInfo.setProductPrice(new BigDecimal(2.3));
+        productInfo.setProductName("蛋卷");
+        productInfo.setProductPrice(new BigDecimal(2.9));
         productInfo.setProductStock(100);
-        productInfo.setProductDescription("很好吃");
+        productInfo.setProductDescription("很好吃0");
         productInfo.setProductIcon("http://www.yylovell.cn/1.jpg");
         productInfo.setProductStatus(0);
-        productInfo.setCategoryType(2);
+        productInfo.setCategoryType(1);
 
         ProductInfo res = productInfoRepository.save(productInfo);
 
